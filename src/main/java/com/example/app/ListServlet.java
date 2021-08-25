@@ -15,7 +15,6 @@ import java.util.List;
 public class ListServlet extends HttpServlet {
 
     private String message;
-
     public void init() {
         message = "List product!";
     }
