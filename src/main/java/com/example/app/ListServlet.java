@@ -1,4 +1,5 @@
 package com.example.app;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,11 +10,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-import com.example.app.Model;
-import com.example.app.Product;
 
-
-@WebServlet (name = "listServlet", value = "/list")
+@WebServlet(name = "listServlet", value = "/list")
 public class ListServlet extends HttpServlet {
 
     private String message;
@@ -39,7 +37,6 @@ public class ListServlet extends HttpServlet {
         request.setAttribute("Product", product);
 
     }
-
 
     public void destroy() {
     }
