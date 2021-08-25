@@ -32,17 +32,6 @@ public class Model {
         products.add(new Product(counter.getAndIncrement(), "Ry", 30));
     }
 
-    public Optional<Product> getProductById(int id) {
-
-        for (Product product : products) {
-            if (product.getId() == id) {
-                return Optional.of(product);
-            }
-        }
-
-        return Optional.empty();
-
-    }
 
     public List<Product> getProducts() {
         return products;
