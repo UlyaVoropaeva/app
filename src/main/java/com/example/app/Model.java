@@ -17,8 +17,8 @@ public class Model {
         return instance;
     }
 
-    @PostConstruct
-    private void productsList() {
+
+    private void addProductsList() {
 
         products.add(new Product(counter.getAndIncrement(), "Apple", 10));
         products.add(new Product(counter.getAndIncrement(), "Tomato", 20));
@@ -34,6 +34,7 @@ public class Model {
 
 
     public List<Product> getProducts() {
+        addProductsList();
         return products;
 
     }

@@ -7,6 +7,7 @@
 <body>
 <h1><%= "Hello!" %>
 </h1>
+
 <br/>
 <a href="hello-servlet">Hello servlet!</a>
 <a href="list">List product</a>
